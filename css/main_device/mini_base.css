@@ -1,0 +1,514 @@
+/* mini_base.css */
+
+/* desigh data : 1024px;  */
+
+.slide_btn > .next, .gal_slide_btn > .next {
+  float:right; 
+  background-image: url(../../img/icons/icon/right_button.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.slide_btn > .prev, .gal_slide_btn > .prev { 
+  background-image: url(../../img/icons/icon/left_button.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#wrap {
+  width:100%; height:auto; overflow: auto;}
+
+  /* ====== #headBox ============================= */
+  #headBox{
+    position: relative; z-index:5000;
+    width:100%; height:80px;
+    padding:25px 60px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0.2rem 2rem black;}
+
+    h1{
+      float:left;
+      margin-right:25px;
+      width:89px; height: 40px;
+      background-image: url('../../img/icons/logo/img_edm_logo.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%; 
+     }
+
+     h1 > a{display:block; width:100%; height:100%;}
+
+    #gnb{
+      width:750px; height: 50px;
+      margin-top:10px;
+      font-size: 1rem; font-weight: bold;
+    }
+
+    #gnb > ul {
+      width:100%; height:100%;
+    }
+
+    #gnb > ul > li {
+      float:left; width:100px; height:45px;
+      margin-right:10px; text-align: center;}
+    #gnb > ul > li:last-child{margin-right:0;}
+
+    .gnb_box{
+      display: none;
+      position: absolute; z-index: 600;
+      margin-top:26px;
+      width:220px; height:250px;
+      background-color: rgba(255,255,255,0.7);
+    }
+
+    #gnb li:hover .gnb_box{display: block;}
+
+    .gnb_box > ul {width:220px; height:300px;
+                   padding:10px; box-sizing: border-box;}
+
+    .gnb_box > ul > li {
+      float:left; 
+      width:200px; height:25px;
+      margin-bottom:10px;
+      padding-left:5px; box-sizing: border-box;
+      text-align:left;
+      color:#fff;
+      background-color: #333;}
+
+    .gnb_box a{
+      display:block; width:100%; height:100%;
+    }
+
+    .gnb_box > ul > li:last-child{margin-bottom:0;}
+
+    .gnb_box > ul > li:hover {background-color: #0085ac;}
+
+    #gnb_mob{
+      display:none;
+      float:right;
+      top: 30px;
+      width:36px; height:36px; background-color: #333333;
+      background-image: url(../../img/icons/icon/mob_head_menu.png);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }  
+  /* ==== //#headBox =============================== */
+
+  /* gnb 모바일 ======================================= */
+
+  .gnb_mob_menu{
+    display:none;
+    position:absolute; z-index:600;
+    width:100%; height:80%;
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .gnb_mob_menu > ul {
+    width:100%; height:80%;
+    text-align: center;
+    font-size:4rem;
+    color:#fff;
+    padding:50px; box-sizing: border-box;
+  }
+
+  .gnb_mob_menu li {width:auto; height:auto;}
+
+  .gnb_sns{
+    width:100%; height:20%;
+    margin-left:20%; }
+
+  .gnb_sns_box{
+    float:left;
+    width:20%; height:70%;
+    margin-right:2%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .gnb_sns_01{background-image: url(../../img/icons/sns/facebook.png);}
+  .gnb_sns_02{background-image: url(../../img/icons/sns/instagram.png);}
+  .gnb_sns_03{background-image: url(../../img/icons/sns/youtube.png);}
+
+  /* == //aside ======================================= */
+  /* ====== #viewBox ================================ */
+  #viewBox{
+    position: relative; z-index:10;
+    width:100%; height:370px;
+  }
+
+  .slide_btn{
+    position: absolute; z-index:1000;
+    top:50%; left:5%;
+    width:90%; height: 0;
+  }
+  .slide_btn > button {
+    float:left; 
+    width:50px; height: 60px;
+    transform: translateY(-50%);
+    border-radius: 30px;
+  }
+  /* =================== */
+  .view_guide{
+    position: absolute; z-index:400;
+    top:26%; left:10%;
+    width:218px; height:28px;
+    text-align: center;
+    line-height: 28px;
+    color:#fff; font-weight: bold;
+  }
+  .view_details{
+    float:left;
+    width:49%; height: 100%;
+    background-color: #0085ac;
+  }
+  .view_details:hover{
+    color:#0085ac;
+    background-color: #fff;
+  }
+  .drive_test{
+    float:right; z-index:100;
+    width:49%; height: 100%;
+    background-color: #333;
+  }
+  .drive_test:hover{
+    color:#333;
+    background-color: #fff;
+  }
+  /* =================== */
+  .slide_banner_box{
+  width:100%; height:100%;
+  overflow: hidden;
+  }
+  .slide_banner_box > ul{
+  width:500%; height:100%;
+  }
+  .slide_banner_box li {
+    float:left; width:20%; height:100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slide_banner_box span{
+    display: block;
+    padding-top:3%; margin-left:100px;
+    font-weight: bold; font-size:2.5rem;
+    color:#fff;
+  }
+  .slide_ban_01{background-image: url(../../img/image/viewBox/mini_convertible.jpg);}
+  .slide_ban_02{background-image: url(../../img/image/viewBox/mini_contryman.jpg);}
+  .slide_ban_03{background-image: url(../../img/image/viewBox/mini_clubman.jpg);}
+  .slide_ban_04{background-image: url(../../img/image/viewBox/mini_roseedition.jpg);}
+  .slide_ban_05{background-image: url(../../img/image/viewBox/mini_johncooper.png);}
+
+  /* ==== //#viewBox =============================== */
+
+  /* ====== #infoBox =============================== */
+  #infoBox{
+    width:100%; height:250px;
+    padding:28px 17px;
+    border-bottom:2px solid #eee; box-sizing: border-box;
+  }
+
+  #infoBox > h2 {
+    width:100%; height:28px;
+    text-align: center;
+    line-height: 28px; 
+  }
+
+  #infoBox > ul {
+    margin:auto;
+    width:100%; height:220px;}
+
+  #infoBox li {
+    float:left; 
+    margin-right:18px; margin-top:20px;
+    width:15%; height: 150px;}
+
+  #infoBox li:last-child{margin-right:0;}
+
+  .info_area {
+  width:100%; height:110px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;}
+
+  .info_area_01{
+    background-image: url(../../img/image/infoBox/mini_3-door_hatch.jpg);
+  }
+  .info_area_02{
+    background-image: url(../../img/image/infoBox/mini_5-door_hatch.jpg);
+  }
+  .info_area_03{
+    background-image: url(../../img/image/infoBox/mini_convertible.jpg);
+  }
+  .info_area_04{
+    background-image: url(../../img/image/infoBox/mini_clubman.jpg);
+  }
+  .info_area_05{
+    background-image: url(../../img/image/infoBox/mini_countryman.jpg);
+  }
+  .info_area_06{
+    background-image: url(../../img/image/infoBox/mini_jcw.png);
+  }
+
+  .info_car_name {
+    margin-top:10px;
+    width:100%; height:30px;
+    font-size:10pt;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;}
+
+  /* ==== //#infoBox =============================== */
+
+  /* ===== #galBox ================================= */
+  #galBox{
+    position: relative;
+    width:100%; height:500px;
+    padding:26px 0; box-sizing: border-box;
+  }
+
+  #galBox > h2 {
+    width:100%; height:28px;
+    text-align: center;
+    line-height: 28px; 
+  }
+
+  .gal_indicator{
+    position: absolute;
+    font-size:14pt;
+    font-weight: bold;
+    bottom:10%; left:50%;
+    transform: translateX(-50%);
+  }
+
+  .gal_slide_btn{
+    position: absolute; 
+    top:50%; left:12%;
+    left:50%; transform: translateX(-50%);
+    width:75%; height: 0;
+  }
+  
+  .gal_slide_btn > button {
+    float:left; 
+    width:50px; height: 60px;
+    transform: translateY(-50%);
+  }
+  
+  .gal_slide_btn > .next {float:right;}
+
+  .gal_area{
+    position: absolute; z-index:300;
+    left:50%; top:20%;
+    transform: translateX(-50%);
+    width:612px; height:300px;
+  }
+
+  .gal_box{
+    width:298px; height:246px;
+    border-radius: 60px;
+    background-color: #fff;
+  }
+  .gal_area_01{
+    float:left;
+    background-image: url(../../img/image/galleryBox/guide\)virus.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: 0 0;}
+  .gal_area_02{
+    float:right;
+    background-image: url(../../img/image/galleryBox/guide_recall.PNG);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: 0 0;}
+
+  .gal_info{
+    width:298px; height:110px;
+    margin-top:164px;
+    background-color: #425067;
+  }
+
+  .gal_info > p {
+    display: block;
+    margin-left:10px; padding-top:10px;
+    color:#fff;
+    font-size:14pt;
+    font-weight: bold;
+  }
+
+  .gal_view{
+    width:90px; height:26px;
+    margin-top:20px; margin-left:10px;
+    font-size:11pt;
+    text-align: center;
+    font-weight: bold;
+    padding:2px; box-sizing: border-box;
+    background-color: #eee;
+  }
+
+  .gal_view:hover{background-color: #133261; color:#fff;}
+  /* === =//#galBox =============================== */
+
+  /* ====== #newsBox ============================== */
+  #newsBox{
+    width:100%; height:400px;
+    background-color: #eee;
+  }
+
+  #newsBox > h2 {padding-top:50px; margin-left: 50px;}
+
+  .news_area {
+    width:90%; height:230px;
+    margin:auto; margin-top:10px;}
+
+    .news_info {
+      float:left;
+      width:60%; height:100%;}
+    
+      .news_box{
+        float:left;
+        width:25%; height:166px;
+        background-color: #133261;
+        margin-top:44px;
+        margin-left:24px;
+        color:#fff;
+        font-size:10pt;
+        padding:4px; box-sizing: border-box;
+      }
+        .news_pic{
+          position: relative; z-index:10;
+          width:100%; height:80px;
+          right:14px; bottom:14px;
+          background-color: #fff;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+
+        .np_01{background-image: url('../../img/image/newsBox/topic-2.teaserimage.768w.png');}
+        .np_02{background-image: url('../../img/image/newsBox/VISION_NEXT_100.teaserimage.768w.jpg');}
+        .np_03{background-image: url('../../img/image/newsBox/topic-3.teaserimage.768w.png');}
+      
+
+  .showroom {
+      float:right;
+      width:40%; height:100px;
+      margin-top:40px;
+      background-color: #fff;
+      padding:15px; box-sizing: border-box;}
+  .showroom > h3{width:100%;}
+
+    .showroom_info{
+      margin-top:15px;
+      width:190px; height: 30px;
+      color:#fff; font-size:1rem;
+      font-weight: bold;
+      padding:2px; box-sizing: border-box;
+      background-color: #0085ac;
+    }
+
+    .showroom_icon{
+      float:left;
+      margin-left:10px; margin-top:2px;
+      width:16px; height:22px;
+      background-image: url(../../img/icons/icon/location.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    .showroom_info > p {display:block; padding-left:40px;
+                        line-height: 26px;}
+    
+  /* ==== //#newsBox =============================== */
+
+  /* ====== #footBox =============================== */
+#footBox{
+  width:100%; height:250px;
+  padding:20px; box-sizing: border-box;
+  background-color: #333;
+}
+
+#footBox h3 {color:#fff;}
+
+.customer_box{
+  float:left;
+  margin-left:80px;
+  width:71.875vw; height:auto;}
+
+  .customer_box > ul {
+    width:71.289062vw; height:2.73vw;
+    padding:3px; box-sizing: border-box;
+  }
+
+  .customer_box li {
+    float:left;
+    margin-right:4px;
+    color:#333;
+    font-size:8pt;
+    text-align: center;
+    width:100px; height:20px;
+    background-color: #fff;
+  }
+
+  .customer_box li:last-child{margin-right:0;}
+
+  .customer_box li:hover,
+  .customer_box li:focus{font-weight: bold;}
+
+.sns_box{
+  float:right; 
+  margin-top:30px; margin-right:90px;
+  width:120px; height:40px;}
+
+.sns_box > ul{
+  width:100%; height:100%;
+  padding:2px; box-sizing: border-box;
+}
+
+.sns_box li{
+  float:left;
+  width:32px; height:32px;
+  margin-right:6px;
+}
+
+.sns_box li:nth-child(1){
+  background-image: url(../../img/icons/sns/facebook.png);
+  background-size: cover;
+}
+
+.sns_box li:nth-child(2){
+  background-image: url(../../img/icons/sns/instagram.png);
+  background-size: cover;
+}
+
+.sns_box li:nth-child(3){
+  background-image: url(../../img/icons/sns/youtube.png);
+  background-size: cover;
+  margin-right: 0;}
+
+
+.sns_box a {display:block; width:100%; height:100%;}
+
+.mini_info_box{
+  margin-left:80px; 
+  width:500px; height:120px;
+   }
+
+.mini_info_box_area{
+  margin-top:5px;
+  width:100%; height: 100px;
+  background-color: #fff;
+  font-size:9pt;
+  font-weight: bold;
+}
+
+.mini_info_box p {
+  display: block;
+  margin-left:15px;
+  padding-top:10px;
+}
+
+  /* ==== //#footBox =============================== */
+

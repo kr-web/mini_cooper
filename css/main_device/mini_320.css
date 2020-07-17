@@ -1,0 +1,99 @@
+/*mini_320.css*/
+
+@media screen and (max-width: 639px) {
+    #gnb{display: none;}
+    #gnb_mob{display:block;}
+
+    .gnb_mob_menu{
+        height:70%;
+    }
+    .gnb_mob_menu > ul{
+        font-size: 2.8rem;
+    }
+
+    /* ===== */
+    #viewBox{display:none;}
+
+    /* ===== */
+    #infoBox{height:1400px;}
+
+    #infoBox > ul{
+        padding:0; box-sizing: border-box;}
+  
+      #infoBox li{
+        width:100%; height:100%;
+        margin-top:5px;
+      }
+
+      .info_area_06{background-size: cover;}
+
+
+
+    /* ===== */
+    #galBox{display: none;}
+
+    /* ===== */
+    #newsBox > h2{display:none;}
+    .news_info{display:none;}
+    
+    #newsBox{width:100%; height:25vw;}
+
+    .news_area{width:100%; height:100%;}
+
+    .showroom{
+        margin-top:0;
+        width:100%; height:100%;
+        padding:10px; box-sizing: border-box;
+    }
+
+    .showroom h3{float:left; margin-top:8%; text-align:center; width:50%; font-size:0.9rem;}
+    .showroom_info{float:left; margin-top:8%; width:48%; font-size:0.7rem;}
+
+    
+
+    /* ===== */
+
+    #footBox{
+        height:350px;
+      }
+    
+      .customer_box{
+        margin-left:30px;
+        width:100%;}
+  
+      .customer_box > ul{
+        height:100%;
+        background-color: transparent;
+      }
+    
+      .customer_box li {
+        color:#333;
+        margin-top:1%;
+        font-weight: bold;
+        background-color: #fff;
+      }
+  
+      .customer_box li{
+        float:left; height:20px;}
+  
+      .sns_box{display:none;}
+  
+      .mini_info_box{
+        margin-top:50px;
+        margin-left:30px;
+        float:left; 
+        width:80%;
+        height:auto}
+
+      .mini_info_box_area{
+        height:100%;
+      }
+
+    
+    .mini_info_box p {
+        margin-left:10px;
+        padding-top:5px;
+    }
+
+    .sns_box{display:none;}
+}

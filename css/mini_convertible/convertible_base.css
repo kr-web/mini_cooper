@@ -1,0 +1,657 @@
+/* convertible.css */
+/* device 1024px 기준 */
+
+#wrap{
+  width: 100%; height:auto;
+  margin:auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ====== #headBox ============================= */
+#headBox{
+  position: relative; z-index:5000;
+  width:100%; height:80px;
+  padding:25px 60px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 2rem black;}
+
+  h1{
+    float:left;
+    margin-right:25px;
+    width:89px; height: 40px;
+    background-image: url('../../img/icons/logo/img_edm_logo.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+   }
+
+   h1 > a{display:block; width:100%; height:100%;}
+
+  #gnb{
+    width:750px; height: 50px;
+    margin-top:10px;
+    font-size: 10pt; font-weight: bold;
+  }
+
+  #gnb > ul {
+    width:100%; height:100%;
+  }
+
+  #gnb > ul > li {
+    float:left; width:100px; height:45px;
+    margin-right:10px; text-align: center;}
+  #gnb > ul > li:last-child{margin-right:0;}
+
+  .gnb_box{
+    display: none;
+    position: absolute; z-index: 600;
+    margin-top:26px;
+    width:220px; height:200px;
+    background-color: rgba(255,255,255,0.7);
+  }
+
+  #gnb li:hover .gnb_box{display: block;}
+
+  .gnb_box > ul {width:220px; height:200px;
+                 padding:10px; box-sizing: border-box;}
+
+  .gnb_box > ul > li {
+    float:left; 
+    width:200px; height:20px;
+    margin-bottom:10px;
+    padding-left:5px; box-sizing: border-box;
+    text-align:left;
+    color:#fff;
+    background-color: #333;}
+
+  .gnb_box a{
+    display:block; width:100%; height:100%;
+  }
+
+  .gnb_box > ul > li:last-child{margin-bottom:0;}
+
+  .gnb_box > ul > li:hover {background-color: #0085ac;}
+
+  #gnb_mob{
+    display:none;
+    float:right;
+    top: 30px;
+    width:36px; height:36px; background-color: #333333;
+    background-image: url(../../img/icons/icon/mob_head_menu.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }  
+
+/* gnb 모바일 버젼 ======================================= */
+
+.gnb_mob_menu{
+  display:none;
+  position:absolute; z-index:600;
+  width:100%; height:100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.gnb_mob_menu > ul {
+  width:100%; height:80%;
+  text-align: center;
+  font-size:60pt;
+  color:#fff;
+  padding:50px; box-sizing: border-box;
+}
+
+.gnb_mob_menu li {width:auto; height:auto;}
+
+.gnb_sns{
+  width:100%; height:20%;
+  margin-left:23%; }
+
+.gnb_sns_box{
+  float:left;
+  width:20%; height:70%;
+  
+}
+
+.gnb_sns_01{
+  background-image: url(../../img/icons/sns/facebook.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.gnb_sns_02{
+  background-image: url(../../img/icons/sns/instagram.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.gnb_sns_03{
+  background-image: url(../../img/icons/sns/youtube.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+  /* ==== //#headBox =============================== */
+
+  /* ====== #viewBox =============================== */
+  #viewBox{
+    width:100%; height: 500px;
+    background-color: #ccc;
+  }
+
+  .view_area{
+    width: 100%; height:100%;
+    background-image: url(../../img/image/mini_convertible/viewBox/viewBg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding:5%; box-sizing: border-box;
+  }
+
+  .view_area > p{
+    color:#fff;
+    font-size:2.5rem;
+    margin-left:5%;
+  }
+
+  .viewTitle{
+    width:500px;
+    border-top:2px solid #fff;
+    font-weight: bold;
+  }
+
+  /* ==== //#viewBox =============================== */
+
+  /* ====== #infoBox // aside ====================== */
+  #infoBox{
+    position:fixed; top:20%; right:0%;
+    width:50px; height:185px;
+  }
+
+  #infoBox > ul{
+    width:100%; height:100%;
+    padding:5px; box-sizing: border-box;
+  }
+
+  #infoBox li{
+    width:100%; height:40px;
+    margin-bottom:5px;
+    border:2px solid #fff;
+    padding:5px;
+    box-sizing: border-box;
+    background-color: #426087;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 70%;
+  }
+
+  #infoBox li:nth-child(1){background-image: url(../../img/image/mini_convertible/aside/pickup-car.png);}
+  #infoBox li:nth-child(2){background-image: url(../../img/image/mini_convertible/aside/apply.png);}
+  #infoBox li:nth-child(3){background-image: url(../../img/image/mini_convertible/aside/location.png);}
+  #infoBox li:nth-child(4){background-image: url(../../img/image/mini_convertible/aside/download.png);}
+
+  #infoBox li:last-child{margin-bottom: 0;}
+
+  #infoBox li > a{display:block; width: 100%; height: 100%;}
+
+  .info_explain{
+    display:none;
+    float:right; 
+    width:100px; height:30px; 
+    margin-right:33px; 
+    line-height: 30px;
+    padding-left:5px;
+    font-size:0.9rem;
+    color:#fff;
+    background-color: #333;
+  }
+
+
+
+  /* ====== #tabBox =============================== */
+  #tabBox{
+    width:100%; height:80px;
+    padding:20px; box-sizing: border-box;
+    background-color: #fff;
+    box-shadow:0.2rem 0.2rem 0.2rem #ddd  ;
+  }
+
+  #tabBox > ul{
+    width:100%; height:40px;
+  }
+
+  #tabBox li{
+    float:left;
+    width:10%; height:100%;
+    line-height:40px;
+    text-align:center;
+    border-right:1px solid #333;
+  }
+
+  #tabBox li:hover,
+  #tabBox li:focus{
+    font-weight: bold;
+  }
+
+  #tabBox li > a{
+    display:block; width:100%; height:100%;
+  }
+  /* ==== //#tabBox =============================== */
+
+  /* ====== #tabBox_area=============================== */
+  .tabBox_area{
+    width:100%; height:auto;
+  }
+  /* ==== //#tabBox_area=============================== */
+
+        /* ====== #modelBox =============================== */
+        #modelBox{height:1600px;}
+
+        #modelBox.active #modelBox{display:block;}
+        #modelBox.active #detailBox{display:none;}
+        #modelBox.active #dataBox{display:none;}
+
+        .model_area{padding:30px; box-sizing: border-box;
+                    border-bottom:2px solid #eee;}
+
+        .model_area h4{
+          width:100%; height:40px;
+          font-style: italic; 
+          font-size:2rem; text-align:center;
+        }
+
+          .highrights{
+            width:100%; height:1200px;
+          }
+
+            .highBox{
+              width:50%; height:500px;
+              margin:auto; margin-top:30px;
+            }
+
+            .high_area{
+              width:100%; height:300px;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+            }
+
+            .high_01{background-image: url(../../img/image/mini_convertible/modelBox/high_01.jpg);}
+            .high_02{background-image: url(../../img/image/mini_convertible/modelBox/high_02.jpg);}
+
+            .high_title{
+              width:100%; height:50px; line-height: 50px;
+              font-size:1.5rem; border-bottom:1px solid #ddd; box-sizing: border-box;
+            }
+
+          .insideCar{
+            width:100%; height:398px;
+            background-color: #fff;
+          }
+
+          .insideCar_area{
+            width:70%; height:250px;
+            margin:auto; margin-top:30px;
+            background-image: url(../../img/image/mini_convertible/modelBox/inthecar.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+          }
+        /* ==== //#modelBox =============================== */
+
+        /* ====== #detailBox =============================== */
+        #detailBox{
+          height:auto; 
+        }
+
+        #detailBox.active #modelBox{display:none;}
+        #detailBox.active #detailBox{display:block;}
+        #detailBox.active #dataBox{display:none;}
+
+        /* ======= detailBox 공통요소 ========*/
+          
+          .detail_area{
+            width:100%; height:500px; padding:30px;
+            border-bottom:2px solid #eee; box-sizing:border-box;
+          }
+          
+          .detail_area h4{
+          width:100%; height:60px;
+          font-style: italic; 
+          font-size:2rem; text-align:center;
+          margin-bottom:40px;
+          }
+
+          .detail_img{
+            width:100%; height:60%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+          }
+
+          .detail_img button{
+            width:100%; height:100%;
+          }
+
+          .detail_title{
+            width:100%; height:40%;
+            border:3px solid #eee;
+            padding:8px; box-sizing: border-box;
+          }
+
+          .detail_title h5{
+            width:100%; height:40px;
+            font-size:1rem;
+          }
+
+
+          /* ======= designBox ========*/
+          .designBox{
+            height:1000px;
+          }
+
+              .designBox > ul{
+                width:80%; height:800px;
+                margin:auto;
+              }
+
+              .designBox li {
+                float:left;
+                width:30%; height:30%;
+                margin-right:5%; margin-bottom:5%;
+              }
+
+              .designBox li:nth-child(3n){margin-right:0;}
+
+              .design_01{background-image: url(../../img/image/mini_convertible/detailBox/design_01.jpg);}
+              .design_02{background-image: url(../../img/image/mini_convertible/detailBox/design_02.jpg);}
+              .design_03{background-image: url(../../img/image/mini_convertible/detailBox/design_03.jpg);}
+              .design_04{background-image: url(../../img/image/mini_convertible/detailBox/design_04.jpg);}
+              .design_05{background-image: url(../../img/image/mini_convertible/detailBox/design_05.jpg);}
+              .design_06{background-image: url(../../img/image/mini_convertible/detailBox/design_06.jpg);}
+              .design_07{background-image: url(../../img/image/mini_convertible/detailBox/design_07.png);}
+              .design_08{background-image: url(../../img/image/mini_convertible/detailBox/design_08.jpg);}
+              .design_09{background-image: url(../../img/image/mini_convertible/detailBox/design_09.jpg);}
+
+
+
+          /* ======= functionBox ========*/
+
+          .functionBox{
+            height:800px;
+          }
+
+              .functionBox > ul{
+                width:60%; height:600px;
+                margin:auto;
+              }
+
+              .functionBox li{
+                float:left;
+                width:45%; height:45%;
+                margin-right:5%; margin-bottom:5%;
+              }
+
+
+              .function_01{background-image: url(../../img/image/mini_convertible/detailBox/function_01.jpg);}
+              .function_02{background-image: url(../../img/image/mini_convertible/detailBox/function_02.jpg);}
+              .function_03{background-image: url(../../img/image/mini_convertible/detailBox/function_03.jpg);}
+              .function_04{background-image: url(../../img/image/mini_convertible/detailBox/function_04.jpg);}
+
+          /* ======= inpoBox ========*/
+          .inpoBox {}
+
+              .inpoBox > ul{
+                width:60%; height:300px;
+                margin:auto;
+              }
+
+              .inpoBox li{
+                float:left;
+                width:45%; height:100%;
+                margin-right:5%; 
+              }
+
+              .inpo_01{background-image: url(../../img/image/mini_convertible/detailBox/inpo_01.jpg);}
+              .inpo_02{background-image: url(../../img/image/mini_convertible/detailBox/inpo_02.jpg);}
+
+          /* ======= safeBox ========*/
+          .safeBox {}
+
+              .safeBox > ul{
+                width:60%; height:300px;
+                margin:auto;
+              }
+
+              .safeBox li{
+                float:left;
+                width:45%; height:100%;
+                margin-right:5%; 
+              }
+
+              .safe_01{background-image: url(../../img/image/mini_convertible/detailBox/safe_01.jpg);}
+              .safe_02{background-image: url(../../img/image/mini_convertible/detailBox/safe_02.jpg);}
+        /* ==== //#detailBox =============================== */
+
+        .modal{
+          display:none;
+          position: fixed; z-index:15000; top:0; left:0;
+          width:100%; height:100%;
+        }
+
+        .modal_view {	
+          position: absolute; top: 0; right: 0; left:0; bottom:0;
+          margin:auto;
+          width: 1000px; height: 500px;
+          background-color: #fff;
+          border:2px solid #777;
+        }
+        
+        .modal_close{
+          position:absolute; top: -20px; right: -20px; 
+          width: 60px; height: 60px;
+        }
+
+        .modal_close button{ 
+          display: block; 
+          width: 100%; height: 100%; 
+          background-color: #333;
+          color:#fff; 
+          font-size:2rem;
+          border-radius: 100%;
+        }
+
+        .modal_image{
+          float:left;
+          width: 50%; height: 100%;
+          background-image: url(../../img/image/mini_convertible/detailBox/design_01.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-size: contain;
+        }
+
+        .modal_content{
+          float:right;
+          width:50%; height:100%;
+          padding:100px 50px; box-sizing: border-box;
+        }
+        
+        .modal_bg {
+          position: absolute; width: 100%; height: 100%; z-index:-1;
+          background-color: rgba(0,0,0,0.5);
+        }
+
+        /* ====== #dataBox =============================== */
+        #dataBox{
+          height:auto; 
+        }
+
+        .data_area{
+          width:100%; height:auto; padding:30px; box-sizing:border-box;
+        }
+
+        .data_area h4{
+        width:100%; height:40px;
+        font-style: italic; 
+        font-size:2rem; text-align:center;
+        margin-bottom:30px;
+        }
+
+        .outSideCar {
+          height:450px;
+          border-bottom:2px solid #eee; box-sizing:border-box;
+        }
+
+            .outSideCar_text{
+              float:left;
+              padding-left:10%;
+              width:20%; height:200px;
+            }
+
+            .outSideCar_text > p{
+              width:90%;
+              border-bottom:1px solid #333;
+              padding-top:5%;
+            }
+
+            .outSideCar_area{
+              float:left;
+              width:60%; height:300px;
+              overflow-x:scroll;
+            }
+
+            .outSideCar_area > ul{
+              width: 200%; height: 100%;
+              background-color: #F1F1F1;
+            }
+
+            .outSideCar li{
+              float:left; height:100%; 
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              background-size: contain;
+            }
+
+            .out_area_01{width:30%; background-image: url(../../img/image/mini_convertible/dataBox/out_01.jpg);}
+            .out_area_02{width:30%; background-image: url(../../img/image/mini_convertible/dataBox/out_02.jpg);}
+            .out_area_03{width:40%; background-image: url(../../img/image/mini_convertible/dataBox/out_03.jpg);}
+
+        .technology{
+          height:600px;
+        }
+
+        .tech_area{
+          width:90%; height:90%;
+          margin:auto;
+          background-image: url(../../img/image/mini_convertible/dataBox/techImg.jpg);
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-size: contain;
+        }
+        /* ==== //#dataBox =============================== */
+
+    .topMvBtn{
+      position: fixed; right:2%; bottom:2%;
+      z-index: 1000;
+      width: 50px; height: 50px;
+      background-color: #425067;
+      background-image: url(../../img/image/mini_convertible/up-arrow.png);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 50%;
+    }
+
+    .topMvBtn > a{
+      display:block; width:100%; height:100%;
+    }
+
+  /* ====== #footBox =============================== */
+  #footBox{
+    width:100%; height:250px;
+    padding:20px; box-sizing: border-box;
+    background-color: #333;
+  }
+  
+  #footBox h3 {color:#fff;}
+  
+  .customer_box{
+    float:left;
+    margin-left:80px;
+    width:736px; height:70px;}
+  
+    .customer_box > ul {
+      width:730px; height:28px;
+      background-color: #fff;
+      padding:3px; box-sizing: border-box;
+    }
+  
+    .customer_box li {
+      float:left;
+      margin-right:4px;
+      color:#fff;
+      font-size:8pt;
+      text-align: center;
+      width:100px; height:20px;
+      background-color: #333;
+    }
+  
+    .customer_box li:last-child{margin-right:0;}
+  
+  .sns_box{
+    float:right; 
+    margin-top:30px; margin-right:90px;
+    width:120px; height:40px;}
+  
+  .sns_box > ul{
+    width:100%; height:100%;
+    padding:2px; box-sizing: border-box;
+  }
+  
+  .sns_box li{
+    float:left;
+    width:32px; height:32px;
+    margin-right:6px;
+  }
+  
+  .sns_box li:nth-child(1){
+    background-image: url(../../img/icons/sns/facebook.png);
+    background-size: cover;
+  }
+  
+  .sns_box li:nth-child(2){
+    background-image: url(../../img/icons/sns/instagram.png);
+    background-size: cover;
+  }
+  
+  .sns_box li:nth-child(3){
+    background-image: url(../../img/icons/sns/youtube.png);
+    background-size: cover;
+    margin-right: 0;}
+  
+  
+  .sns_box a {display:block; width:100%; height:100%;}
+  
+  .mini_info_box{
+    margin-left:80px; 
+    width:500px; height:120px;
+     }
+  
+  .mini_info_box_area{
+    margin-top:5px;
+    width:500px; height: 100px;
+    background-color: #fff;
+    font-size:9pt;
+    font-weight: bold;
+  }
+  
+  .mini_info_box p {
+    display: block;
+    margin-left:15px;
+    padding-top:10px;
+  }
+  
+    /* ==== //#footBox =============================== */
+  
+  

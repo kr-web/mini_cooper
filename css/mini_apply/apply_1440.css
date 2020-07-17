@@ -1,0 +1,25 @@
+/* apply_1440.css */
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+
+  .apply_title{font-size:1.5rem;}
+
+
+  .customer_info dt{width:20%;}
+  .customer_info dd{width:75%;}
+
+  .agree{margin-left:25%;}
+
+  .model_details{
+    font-size:1rem;
+  }
+
+  #infoBox{
+    font-size:1.5rem;
+  }
+
+  .customer_infi li{
+    height:80px; 
+  }
+
+}

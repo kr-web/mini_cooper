@@ -1,0 +1,70 @@
+/*mini_640.css*/
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    #gnb{display: none;}
+
+    #gnb_mob{display:block;}
+
+    .gnb_mob_menu > ul{
+      font-size: 3rem;
+    }
+    
+  /* ======================================= */
+    #viewBox{height:39.0625vw;}
+
+    .slide_banner_box span{
+      margin-left:50px;
+      font-size:1.5rem;
+    }
+
+    .slide_btn, .view_guide{display: none;}
+
+  /* ======================================= */
+    #infoBox{height:900px;}
+
+    #infoBox > ul{
+      padding:60px; box-sizing: border-box;}
+
+    #infoBox li{
+      width:33%; height:250px;
+      margin-left:10%;
+    }
+
+  /* ======================================= */
+    #galBox{display: none;}
+
+  /* ======================================= */
+    
+
+  /* ======================================= */
+    #footBox{
+      height:320px;
+      padding:10px;
+    }
+  
+    .customer_box{
+      width:100%;}
+
+    .customer_box > ul{
+      height:100%;
+      background-color: transparent;
+    }
+  
+    .customer_box li {
+      color:#333;
+      margin-top:1%;
+      font-weight: bold;
+      background-color: #fff;
+    }
+
+    .customer_box li{
+      float:left; height:20px;}
+
+    .sns_box{display:none;}
+
+    .mini_info_box{
+      margin-top:50px;
+      width:500px;
+      float:left; 
+      height:38px;}
+  }

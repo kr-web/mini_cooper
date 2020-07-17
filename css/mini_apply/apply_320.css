@@ -1,0 +1,118 @@
+/*apply_320.css*/
+
+@media screen and (max-width: 639px){
+  
+      #applyBox{
+        height:530vw;
+        padding:10px; box-sizing: border-box;
+      }
+
+      .apply_area{
+        width:100%;
+        height:300vw;
+        margin-bottom:10px;
+      }
+
+      .cars > ul{
+        padding:0;
+      }
+      .cars li{
+        width:100%; height:40vw;
+      }
+
+      .cars li:nth-child(2n){margin-left:0;}
+
+      .model_details{
+        font-size:0.5rem;
+      }
+
+    /* ==================== */  
+
+      .infoBox{
+        height:220vw;
+      }
+       
+      .information{
+        font-size:0.8rem;
+      }
+
+      .info_select_box > ul{
+        width:80%; 
+      }
+
+      .customer_info{
+        height:60%;
+      }
+
+      .customer_info dd >  button{
+        width:40%; height:30px;
+        border-radius: 5px;
+        border:2px solid #333;
+      }
+
+      .phoneBox{
+        width:80px;
+      }
+
+      .inputBox{width:140px;}
+
+      .agreetitle{
+        font-size:0.6rem;
+      }
+
+      .apply_box{
+        margin-left:30%;
+        width:200px; height:5%;
+      }
+
+      .apply_box > button{
+        width:70px;
+        font-size:0.8rem;
+      }
+
+     /* ======================================= */  
+
+      #footBox{
+        height:350px;
+      }
+    
+      .customer_box{
+        margin-left:30px;
+        width:100%;}
+  
+      .customer_box > ul{
+        height:100%;
+        background-color: transparent;
+      }
+    
+      .customer_box li {
+        color:#333;
+        margin-top:1%;
+        font-weight: bold;
+        background-color: #fff;
+      }
+  
+      .customer_box li{
+        float:left; height:20px;}
+  
+      .sns_box{display:none;}
+  
+      .mini_info_box{
+        margin-top:50px;
+        margin-left:30px;
+        float:left; 
+        width:80%;
+        height:auto}
+
+      .mini_info_box_area{
+        height:100%;
+      }
+
+    
+    .mini_info_box p {
+        margin-left:10px;
+        padding-top:5px;
+    }
+
+    .sns_box{display:none;}
+}

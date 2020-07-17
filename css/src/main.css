@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@import url("../main_device/mini_base.css");
+
+@import url("../main_device/mini_320.css");
+@import url("../main_device/mini_640.css");
+@import url("../main_device/mini_1024.css");
+@import url("../main_device/mini_1440.css");
+@import url("../main_device/mini_1920.css");

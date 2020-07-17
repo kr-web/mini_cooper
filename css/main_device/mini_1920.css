@@ -1,0 +1,33 @@
+/* mini_1920.css */
+
+@media screen and (min-width:1920px) {
+    #gnb{
+        font-size:1rem;
+    }
+
+    #viewBox{
+      height:52.222222vw;}
+
+    .view_guide{
+      top:20%; left:8%;
+      width:300px; height:35px;
+    }
+    
+    .slide_banner_box span{
+        padding-top:5%; margin-left:150px;
+        font-size:3.5rem;
+    }
+    
+    #infoBox > ul {width:100%;}
+
+    #infoBox li {
+      margin-right:15px; margin-top:20px;
+      width:16%; height: 100%;}
+  
+    #infoBox li:last-child{margin-right:0;}
+
+    .gal_slide_btn{
+      width:50%;
+    }
+
+}

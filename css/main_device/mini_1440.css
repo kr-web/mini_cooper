@@ -1,0 +1,27 @@
+/* mini_1440.css */
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    #gnb{
+        font-size:1rem;
+    }
+
+    #viewBox{height:46.132812vw;}
+
+    .view_guide{
+        top:23%; left:8%;
+        width:300px; height:35px;
+    }
+
+    .slide_banner_box span{
+        padding-top:4%; margin-left:150px;
+        font-size:3.5rem;
+      }
+
+    /* ======================================== */
+    #infoBox {height:300px;}
+
+    .gal_slide_btn{
+        width:60%;
+    }
+
+}
